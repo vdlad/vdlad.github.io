@@ -6,23 +6,14 @@
     <description>Recent content in Papers on Vedang Lad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://vdlad.github.io/papers/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://vdlad.github.io/papers/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>A Theory of Countercyclical Government Multiplier</title>
-      <link>https://vdlad.github.io/2/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://vdlad.github.io/2/</guid>
-      <description>This paper develops a New Keynesian model in which the government multiplier doubles when unemployment rises from 5% to 8%. Published in AEJ Macro, 2014.</description>
-    </item>
-    
-    <item>
-      <title>Do Matching Frictions Explain Unemployment? Not in Bad Times</title>
+      <title>Estimating label quality and errors in semantic segmentation data via any model</title>
       <link>https://vdlad.github.io/1/</link>
-      <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://vdlad.github.io/1/</guid>
-      <description>This paper proposes a matching model of the labor market with job rationing: unemployment persists even without matching frictions. Published in AER, 2012.</description>
+      <description>This paper proposes a novel method to find label errors in semantic segmentation datasets.</description>
     </item>
     
   </channel>

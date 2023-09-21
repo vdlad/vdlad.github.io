@@ -6,184 +6,40 @@
     <description>Recent content in Tags on Vedang Lad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://vdlad.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://vdlad.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Beveridge curve</title>
-      <link>https://vdlad.github.io/tags/beveridge-curve/</link>
-      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+      <title>cleanlab</title>
+      <link>https://vdlad.github.io/tags/cleanlab/</link>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://vdlad.github.io/tags/beveridge-curve/</guid>
+      <guid>https://vdlad.github.io/tags/cleanlab/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>business cycles</title>
-      <link>https://vdlad.github.io/tags/business-cycles/</link>
-      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+      <title>computer vision</title>
+      <link>https://vdlad.github.io/tags/computer-vision/</link>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://vdlad.github.io/tags/business-cycles/</guid>
+      <guid>https://vdlad.github.io/tags/computer-vision/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>economic slack</title>
-      <link>https://vdlad.github.io/tags/economic-slack/</link>
-      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+      <title>data centric </title>
+      <link>https://vdlad.github.io/tags/data-centric/</link>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://vdlad.github.io/tags/economic-slack/</guid>
+      <guid>https://vdlad.github.io/tags/data-centric/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>efficiency</title>
-      <link>https://vdlad.github.io/tags/efficiency/</link>
-      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+      <title>machine learning</title>
+      <link>https://vdlad.github.io/tags/machine-learning/</link>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://vdlad.github.io/tags/efficiency/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>government spending</title>
-      <link>https://vdlad.github.io/tags/government-spending/</link>
-      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://vdlad.github.io/tags/government-spending/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>matching model</title>
-      <link>https://vdlad.github.io/tags/matching-model/</link>
-      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://vdlad.github.io/tags/matching-model/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>monetary policy</title>
-      <link>https://vdlad.github.io/tags/monetary-policy/</link>
-      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://vdlad.github.io/tags/monetary-policy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>price rigidity</title>
-      <link>https://vdlad.github.io/tags/price-rigidity/</link>
-      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://vdlad.github.io/tags/price-rigidity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>stabilization policy</title>
-      <link>https://vdlad.github.io/tags/stabilization-policy/</link>
-      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://vdlad.github.io/tags/stabilization-policy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sufficient statistics</title>
-      <link>https://vdlad.github.io/tags/sufficient-statistics/</link>
-      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://vdlad.github.io/tags/sufficient-statistics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>unemployment gap</title>
-      <link>https://vdlad.github.io/tags/unemployment-gap/</link>
-      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://vdlad.github.io/tags/unemployment-gap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>job rationing</title>
-      <link>https://vdlad.github.io/tags/job-rationing/</link>
-      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://vdlad.github.io/tags/job-rationing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>multiplier</title>
-      <link>https://vdlad.github.io/tags/multiplier/</link>
-      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://vdlad.github.io/tags/multiplier/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>unemployment</title>
-      <link>https://vdlad.github.io/tags/unemployment/</link>
-      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://vdlad.github.io/tags/unemployment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>unemployment insurance</title>
-      <link>https://vdlad.github.io/tags/unemployment-insurance/</link>
-      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://vdlad.github.io/tags/unemployment-insurance/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>wage rigidity</title>
-      <link>https://vdlad.github.io/tags/wage-rigidity/</link>
-      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://vdlad.github.io/tags/wage-rigidity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>New Keynesian model</title>
-      <link>https://vdlad.github.io/tags/new-keynesian-model/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://vdlad.github.io/tags/new-keynesian-model/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>state dependence</title>
-      <link>https://vdlad.github.io/tags/state-dependence/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://vdlad.github.io/tags/state-dependence/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>differential equations</title>
-      <link>https://vdlad.github.io/tags/differential-equations/</link>
-      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://vdlad.github.io/tags/differential-equations/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>optimal control</title>
-      <link>https://vdlad.github.io/tags/optimal-control/</link>
-      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://vdlad.github.io/tags/optimal-control/</guid>
+      <guid>https://vdlad.github.io/tags/machine-learning/</guid>
       <description></description>
     </item>
     
