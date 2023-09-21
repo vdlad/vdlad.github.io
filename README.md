@@ -1,6 +1,6 @@
 # Minimalist Hugo Template for Academic Websites
 
-This repository contains the source code to https://pascalmichaillat.org: a personal academic website created with [Hugo](https://github.com/gohugoio/hugo) and the [PaperMod theme](https://github.com/adityatelange/hugo-PaperMod). The website is hosted on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).
+This repository contains the source code to https://vdlad.github.io : a personal academic website created with [Hugo](https://github.com/gohugoio/hugo) and the [PaperMod theme](https://github.com/adityatelange/hugo-PaperMod). The website is hosted on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).
 
 The code is publicly available as a template repository so anyone can generate a new repository with the same directory structure and files, and quickly create their own website. The code might also be helpful to anyone who wishes to learn about Hugo or wants to recreate specific features of the website.
 
@@ -54,15 +54,6 @@ Beside the Google Analytics ID, make sure to update all the parameters that are 
 ## Content files
 
 The files in the `content` folder are Markdown files that contain the content of the website. Each file corresponds to one page of the website. 
-
-The folder in which the file is placed (`papers`, `courses`, or `design`) determines the category in which the page will appear (the [paper page](https://pascalmichaillat.org/papers/), the [course page](https://pascalmichaillat.org/courses/), or the [design page](https://pascalmichaillat.org/design/)). 
-
-Keep the folders `papers`, `courses`, and `design` to preserve this website's structure. You can change the name of a folder to change the URL where the category page is located. Keep the `tags` folder to preserve the customization of the [tag page](https://pascalmichaillat.org/tags/).
-
-All the files currently in the `content` folder pertain to this website and can be safely deleted, with the exception of the following files:
-
-+ `location.md` – Page linked to the location icon on the homepage. Replace the content with your own addresses.
-+ `officehours.md` – Page linked to the office hours icon on the homepage. Replace the content with your own office hours.
 
 ## Static files
 
