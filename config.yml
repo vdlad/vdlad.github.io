@@ -1,4 +1,4 @@
-baseURL: "https://vdlad.github.io/" 
+baseURL: "https://vedanglad.com/" 
 title: Vedang Lad
 paginate: 20
 theme: PaperMod
@@ -28,7 +28,7 @@ menu:
         #   weight: 4
 
 params:
-    description: "I am a Master's student at MIT in the Tegmark AI Safety Group where I study mechanastic interpretability."
+    description: "I am a Master's student at MIT in the Tegmark AI Safety Group where I study mechanistic interpretability."
     author: Vedang Lad
     googleAnalyticsID: "G-3MZYQN070Y"
     DateFormat: "January 2006"
