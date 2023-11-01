@@ -53,7 +53,7 @@ params:
     profileMode:
           enabled: true
           title: Vedang Lad
-          subtitle: "I am currently a Master's student at MIT under the guidance of Max Tegmark within the Tegmark AI Safety Group. My research centers on the mechanistic interpretability of deep learning models. During my undergraduate studies at MIT, I double-majored in Computer Science and Physics, where my research primarily focused on intuitive physics, computer vision, and data-centric AI."
+          subtitle: "I am currently a Master's student at MIT under the guidance of Max Tegmark within the Tegmark AI Safety Group. My research centers on the mechanistic interpretability of deep learning models. During my undergraduate studies at MIT, I double-majored in Computer Science and Physics. My academic pursuits were supplemented by my research endeavors in computer vision, numerical analysis, and data science."
           imageUrl: "/picture.jpeg"
           imageWidth: 160
           imageHeight: 160
