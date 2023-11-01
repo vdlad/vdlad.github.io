@@ -1,6 +1,6 @@
 # Minimalist Hugo Template for Academic Websites
 
-This repository contains the source code to https://vdlad.github.io : a personal academic website created with [Hugo](https://github.com/gohugoio/hugo) and the [PaperMod theme](https://github.com/adityatelange/hugo-PaperMod). The website is hosted on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).
+This repository contains the source code to https://vedanglad.com : a personal academic website created with [Hugo](https://github.com/gohugoio/hugo) and the [PaperMod theme](https://github.com/adityatelange/hugo-PaperMod). The website is hosted on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).
 
 The code is publicly available as a template repository so anyone can generate a new repository with the same directory structure and files, and quickly create their own website. The code might also be helpful to anyone who wishes to learn about Hugo or wants to recreate specific features of the website.
 
