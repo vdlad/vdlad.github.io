@@ -2,18 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>machine learning on Vedang Lad</title>
-    <link>https://vdlad.github.io/tags/machine-learning/</link>
+    <link>http://www.vedanglad.com/tags/machine-learning/</link>
     <description>Recent content in machine learning on Vedang Lad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://vdlad.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.vedanglad.com/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Estimating label quality and errors in semantic segmentation data via any model</title>
-      <link>https://vdlad.github.io/1/</link>
-      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
+      <link>http://www.vedanglad.com/1/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://vdlad.github.io/1/</guid>
+      <guid>http://www.vedanglad.com/1/</guid>
       <description>This paper proposes a novel method to find label errors in semantic segmentation datasets.</description>
+    </item>
+    
+    <item>
+      <title>CleaNLP: Detecting Label Errors in General NLP Tasks</title>
+      <link>http://www.vedanglad.com/3/</link>
+      <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.vedanglad.com/3/</guid>
+      <description>This paper presents a method for identifying label errors in natural language processing (NLP) datasets using the T5 model.</description>
+    </item>
+    
+    <item>
+      <title>Building an Efficient Poker Agent Using RL</title>
+      <link>http://www.vedanglad.com/2/</link>
+      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.vedanglad.com/2/</guid>
+      <description>In this paper, we apply variations of Deep Q-learning (DQN) and Proximal Policy Optimization (PPO) to learn the game of heads-up no-limit Texas Hold’em.</description>
+    </item>
+    
+    <item>
+      <title>GRUNet: A Novel Bi-directional RNN for VQA</title>
+      <link>http://www.vedanglad.com/4/</link>
+      <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.vedanglad.com/4/</guid>
+      <description>We propose a new framework which we call GRUNet. GRUNet is a novel Bi-Directional RNN architecture that combines GRU &#43; RNN &#43; ResNet to effectively combine text and im- age input to answer VQA questions.</description>
     </item>
     
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>data centric  on Vedang Lad</title>
-    <link>https://vdlad.github.io/tags/data-centric/</link>
+    <link>http://www.vedanglad.com/tags/data-centric/</link>
     <description>Recent content in data centric  on Vedang Lad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://vdlad.github.io/tags/data-centric/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.vedanglad.com/tags/data-centric/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Estimating label quality and errors in semantic segmentation data via any model</title>
-      <link>https://vdlad.github.io/1/</link>
-      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
+      <link>http://www.vedanglad.com/1/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://vdlad.github.io/1/</guid>
+      <guid>http://www.vedanglad.com/1/</guid>
       <description>This paper proposes a novel method to find label errors in semantic segmentation datasets.</description>
     </item>
     
