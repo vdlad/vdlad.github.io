@@ -32,9 +32,9 @@ params:
     author: Vedang Lad
     googleAnalyticsID: "G-3MZYQN070Y"
     DateFormat: "January 2006"
-    defaultTheme: light
+    defaultTheme: dark
     hideFooter: true
-    disableThemeToggle: true
+    disableThemeToggle: false
     ShowShareButtons: false
     ShowReadingTime: false
     disableSpecial1stPost: true
@@ -80,10 +80,14 @@ params:
         #   url: https://www.youtube.com/@pmichaillat
         - name: GitHub
           url: https://github.com/vdlad
+        - name: Strava
+          url: https://www.strava.com/athletes/16214836
+
+        
 
     assets:
         disableHLJS: true
-        disableScrollBarStyle: true
+        disableScrollBarStyle: false
     cover:
         hiddenInList: true
         hiddenInSingle: true
