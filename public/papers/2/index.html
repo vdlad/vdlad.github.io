@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Opening the AI black box: program synthesis via mechanistic interpretability | Vedang Lad</title>
+<meta name="keywords" content="mechanistic interpretability , program synthesis, AI safety">
+<meta name="description" content="We present a program syntesis method from automated mechanistic interpretibility for RNNs training on integer variable tasks">
+<meta name="author" content="Eric J. Michaud, Isaac Liao, Vedang Lad, Ziming Liu, Anish Mudide, Chloe Loughridge, Zifan Carl Guo, Tara Rezaei Kheirkhah, Mateja Vukelić, Max Tegmark">
+<link rel="canonical" href="http://www.vedanglad.com/papers/2/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5bd49c84a82482ad5130bc7ff06967b12ea106b17adff78903386aab02aa5d29.css" integrity="sha256-W9SchKgkgq1RMLx/8GlnsS6hBrF63/eJAzhqqwKqXSk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://www.vedanglad.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://www.vedanglad.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://www.vedanglad.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://www.vedanglad.com/apple-touch-icon.png">
+
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Opening the AI black box: program synthesis via mechanistic interpretability" />
+<meta property="og:description" content="We present a program syntesis method from automated mechanistic interpretibility for RNNs training on integer variable tasks" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.vedanglad.com/papers/2/" />
+<meta property="og:image" content="http://www.vedanglad.com/papers/2.jpg" /><meta property="article:section" content="papers" />
+<meta property="article:published_time" content="2023-02-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-02-01T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://www.vedanglad.com/papers/2.jpg" />
+<meta name="twitter:title" content="Opening the AI black box: program synthesis via mechanistic interpretability"/>
+<meta name="twitter:description" content="We present a program syntesis method from automated mechanistic interpretibility for RNNs training on integer variable tasks"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Papers",
+      "item": "http://www.vedanglad.com/papers/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Opening the AI black box: program synthesis via mechanistic interpretability",
+      "item": "http://www.vedanglad.com/papers/2/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Opening the AI black box: program synthesis via mechanistic interpretability",
+  "name": "Opening the AI black box: program synthesis via mechanistic interpretability",
+  "description": "We present a program syntesis method from automated mechanistic interpretibility for RNNs training on integer variable tasks",
+  "keywords": [
+    "mechanistic interpretability ", "program synthesis", "AI safety"
+  ],
+  "articleBody": " Download Paper Code and data Abstract We present MIPS, a novel method for program synthesis based on automated mechanistic interpretability of neural networks trained to perform the desired task, auto-distilling the learned algorithm into Python code. We test MIPS on a benchmark of 62 algorithmic tasks that can be learned by an RNN and find it highly complementary to GPT-4: MIPS solves 32 of them, including 13 that are not solved by GPT-4 (which also solves 30). MIPS uses an integer autoencoder to convert the RNN into a finite state machine, then applies Boolean or integer symbolic regression to capture the learned algorithm. As opposed to large language models, this program synthesis technique makes no use of (and is therefore not limited by) human training data such as algorithms and code from GitHub. We discuss opportunities and challenges for scaling up this approach to make machine-learned models more interpretable and trustworthy.\n",
+  "wordCount" : "151",
+  "inLanguage": "en",
+  "image":"http://www.vedanglad.com/papers/2.jpg","datePublished": "2023-02-01T00:00:00Z",
+  "dateModified": "2023-02-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Eric J. Michaud, Isaac Liao, Vedang Lad, Ziming Liu, Anish Mudide, Chloe Loughridge, Zifan Carl Guo, Tara Rezaei Kheirkhah, Mateja Vukelić, Max Tegmark"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://www.vedanglad.com/papers/2/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Vedang Lad",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.vedanglad.com/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3MZYQN070Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3MZYQN070Y');
+</script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://www.vedanglad.com/" accesskey="h" title="Vedang Lad">
+             
+                <img src="http://www.vedanglad.com/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Vedang Lad</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://www.vedanglad.com/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.vedanglad.com/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.vedanglad.com/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Opening the AI black box: program synthesis via mechanistic interpretability
+    </h1>
+
+    
+    <div class="post-meta"><span title='2023-02-01 00:00:00 +0000 UTC'>February 2023</span>&nbsp;&middot;&nbsp;Eric J. Michaud, Isaac Liao, Vedang Lad, Ziming Liu, Anish Mudide, Chloe Loughridge, Zifan Carl Guo, Tara Rezaei Kheirkhah, Mateja Vukelić, Max Tegmark&nbsp;&middot;&nbsp;<a href="https://arxiv.org/pdf/2402.05110.pdf" rel="noopener noreferrer" target="_blank">Preprint</a>
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<h5 id="download">Download</h5>
+<ul>
+<li><a href="/papers/2.pdf">Paper</a>
+</li>
+<li><a href="https://github.com/ejmichaud/neural-verification" target="_blank">Code and data</a>
+</li>
+</ul>
+<hr>
+<h5 id="abstract">Abstract</h5>
+<p>We present MIPS, a novel method for program synthesis based on automated mechanistic interpretability of neural networks trained to perform the desired task, auto-distilling the learned algorithm into Python code. We test MIPS on a benchmark of 62 algorithmic tasks that can be learned by an RNN and find it highly complementary to GPT-4: MIPS solves 32 of them, including 13 that are not solved by GPT-4 (which also solves 30). MIPS uses an integer autoencoder to convert the RNN into a finite state machine, then applies Boolean or integer symbolic regression to capture the learned algorithm. As opposed to large language models, this program synthesis technique makes no use of (and is therefore not limited by) human training data such as algorithms and code from GitHub. We discuss opportunities and challenges for scaling up this approach to make machine-learned models more interpretable and trustworthy.</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://www.vedanglad.com/tags/mechanistic-interpretability/">mechanistic interpretability </a></li>
+      <li><a href="http://www.vedanglad.com/tags/program-synthesis/">program synthesis</a></li>
+      <li><a href="http://www.vedanglad.com/tags/ai-safety/">AI safety</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

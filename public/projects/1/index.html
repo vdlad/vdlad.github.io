@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Building an Efficient Poker Agent Using RL | Vedang Lad</title>
+<meta name="keywords" content="reinforcement learning , machine learning, poker">
+<meta name="description" content="In this paper, we apply variations of Deep Q-learning (DQN) and Proximal Policy Optimization (PPO) to learn the game of heads-up no-limit Texas Hold’em.">
+<meta name="author" content="Alex Kashi, Vedang Lad, Hakon Grini">
+<link rel="canonical" href="http://www.vedanglad.com/projects/1/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5bd49c84a82482ad5130bc7ff06967b12ea106b17adff78903386aab02aa5d29.css" integrity="sha256-W9SchKgkgq1RMLx/8GlnsS6hBrF63/eJAzhqqwKqXSk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://www.vedanglad.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://www.vedanglad.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://www.vedanglad.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://www.vedanglad.com/apple-touch-icon.png">
+
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Building an Efficient Poker Agent Using RL" />
+<meta property="og:description" content="In this paper, we apply variations of Deep Q-learning (DQN) and Proximal Policy Optimization (PPO) to learn the game of heads-up no-limit Texas Hold’em." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.vedanglad.com/projects/1/" />
+<meta property="og:image" content="http://www.vedanglad.com/projects/1.png" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2022-05-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-05-11T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://www.vedanglad.com/projects/1.png" />
+<meta name="twitter:title" content="Building an Efficient Poker Agent Using RL"/>
+<meta name="twitter:description" content="In this paper, we apply variations of Deep Q-learning (DQN) and Proximal Policy Optimization (PPO) to learn the game of heads-up no-limit Texas Hold’em."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Projects",
+      "item": "http://www.vedanglad.com/projects/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Building an Efficient Poker Agent Using RL",
+      "item": "http://www.vedanglad.com/projects/1/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Building an Efficient Poker Agent Using RL",
+  "name": "Building an Efficient Poker Agent Using RL",
+  "description": "In this paper, we apply variations of Deep Q-learning (DQN) and Proximal Policy Optimization (PPO) to learn the game of heads-up no-limit Texas Hold’em.",
+  "keywords": [
+    "reinforcement learning ", "machine learning", "poker"
+  ],
+  "articleBody": " Download Paper Code and data Abstract Poker is one of the most widely played card games worldwide, particularly due to its unique blend of skill and luck. The psychology of a successful poker player, how a player demonstrates confidence through bets and bluffs combined with imperfect information makes poker very “human”. Our group aims to create a deep reinforcement learning agent that is capable of outperforming existing poker bots to demonstrate RL’s ability to “solve” non-deterministic problems. We plan to build on the existing framework Neuron_poker1. This framework provides an OpenAI gym-style environment for training and evaluating Poker agents. It also allows easy creation and integration of new poker “players”, which we create in this project. Using this framework, we create a novel PPO and modified DQN agent that outperforms the existing agents that Neuron Poker has to offer. We also experiment with other variations of DQN, such as dueling DQN and Double DQN to enhance performance. We present a deep reinforcement learning alternative to playing poker, one that does not rely on probability tables or continuous outcome trees, purely on Reinforcement Learning.\n",
+  "wordCount" : "183",
+  "inLanguage": "en",
+  "image":"http://www.vedanglad.com/projects/1.png","datePublished": "2022-05-11T00:00:00Z",
+  "dateModified": "2022-05-11T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Alex Kashi, Vedang Lad, Hakon Grini"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://www.vedanglad.com/projects/1/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Vedang Lad",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.vedanglad.com/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3MZYQN070Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3MZYQN070Y');
+</script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://www.vedanglad.com/" accesskey="h" title="Vedang Lad">
+             
+                <img src="http://www.vedanglad.com/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Vedang Lad</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://www.vedanglad.com/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.vedanglad.com/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.vedanglad.com/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Building an Efficient Poker Agent Using RL
+    </h1>
+
+    
+    <div class="post-meta"><span title='2022-05-11 00:00:00 +0000 UTC'>May 2022</span>&nbsp;&middot;&nbsp;Alex Kashi, Vedang Lad, Hakon Grini&nbsp;&middot;&nbsp;<a href="https://pulkitag.github.io/6.8200/" rel="noopener noreferrer" target="_blank">Project for Computational Sensorimotor Learning</a>
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<h5 id="download">Download</h5>
+<ul>
+<li><a href="/projects/1.pdf">Paper</a>
+</li>
+<li><a href="https://github.com/AlexKashi/AlphaHoldem" target="_blank">Code and data</a>
+</li>
+</ul>
+<hr>
+<h5 id="abstract">Abstract</h5>
+<p>Poker is one of the most widely played card games worldwide, particularly due to its unique blend of skill and luck. The psychology of a successful poker player, how a player demonstrates confidence through bets and bluffs combined with imperfect information makes poker very “human”. Our group aims to create a deep reinforcement learning agent that is capable of outperforming existing poker bots to demonstrate RL’s ability to “solve” non-deterministic problems. We plan to build on the existing framework Neuron_poker1. This framework provides an OpenAI gym-style environment for training and evaluating Poker agents. It also allows easy creation and integration of new poker &ldquo;players&rdquo;, which we create in this project. Using this framework, we create a novel PPO and modified DQN agent that outperforms the existing agents that Neuron Poker has to offer. We also experiment with other variations of DQN, such as dueling DQN and Double DQN to enhance performance. We present a deep reinforcement learning alternative to playing poker, one that does not rely on probability tables or continuous outcome trees, purely on Reinforcement Learning.</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://www.vedanglad.com/tags/reinforcement-learning/">reinforcement learning </a></li>
+      <li><a href="http://www.vedanglad.com/tags/machine-learning/">machine learning</a></li>
+      <li><a href="http://www.vedanglad.com/tags/poker/">poker</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

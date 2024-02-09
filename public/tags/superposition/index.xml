@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>superposition on Vedang Lad</title>
+    <link>http://www.vedanglad.com/tags/superposition/</link>
+    <description>Recent content in superposition on Vedang Lad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.vedanglad.com/tags/superposition/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Effect of Activation Functions On Superposition in Toy Models</title>
+      <link>http://www.vedanglad.com/projects/4/</link>
+      <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.vedanglad.com/projects/4/</guid>
+      <description>An in-depth exploration of how different activation functions influence superposition in neural networks.</description>
+    </item>
+    
+  </channel>
+</rss>

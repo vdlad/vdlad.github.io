@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://www.vedanglad.com/tags/ai-safety/</loc>
+    <lastmod>2023-12-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.vedanglad.com/tags/mechanistic-interpretability/</loc>
+    <lastmod>2023-12-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.vedanglad.com/projects/</loc>
+    <lastmod>2023-12-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.vedanglad.com/tags/superposition/</loc>
+    <lastmod>2023-12-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.vedanglad.com/tags/</loc>
+    <lastmod>2023-12-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.vedanglad.com/projects/4/</loc>
+    <lastmod>2023-12-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.vedanglad.com/</loc>
+    <lastmod>2023-12-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://www.vedanglad.com/tags/cleanlab/</loc>
     <lastmod>2023-07-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -11,7 +32,7 @@
     <loc>http://www.vedanglad.com/tags/data-centric/</loc>
     <lastmod>2023-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.vedanglad.com/1/</loc>
+    <loc>http://www.vedanglad.com/papers/1/</loc>
     <lastmod>2023-07-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.vedanglad.com/tags/machine-learning/</loc>
@@ -20,19 +41,19 @@
     <loc>http://www.vedanglad.com/papers/</loc>
     <lastmod>2023-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.vedanglad.com/tags/</loc>
-    <lastmod>2023-07-11T00:00:00+00:00</lastmod>
+    <loc>http://www.vedanglad.com/papers/2/</loc>
+    <lastmod>2023-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.vedanglad.com/</loc>
-    <lastmod>2023-07-11T00:00:00+00:00</lastmod>
+    <loc>http://www.vedanglad.com/tags/program-synthesis/</loc>
+    <lastmod>2023-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.vedanglad.com/3/</loc>
+    <loc>http://www.vedanglad.com/projects/2/</loc>
     <lastmod>2022-12-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.vedanglad.com/tags/natural-language-processing/</loc>
     <lastmod>2022-12-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.vedanglad.com/2/</loc>
+    <loc>http://www.vedanglad.com/projects/1/</loc>
     <lastmod>2022-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.vedanglad.com/tags/poker/</loc>
@@ -41,7 +62,7 @@
     <loc>http://www.vedanglad.com/tags/reinforcement-learning/</loc>
     <lastmod>2022-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.vedanglad.com/4/</loc>
+    <loc>http://www.vedanglad.com/projects/3/</loc>
     <lastmod>2021-05-11T00:00:00+00:00</lastmod>
   </url>
 </urlset>

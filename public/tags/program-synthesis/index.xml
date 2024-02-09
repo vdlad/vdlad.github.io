@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>program synthesis on Vedang Lad</title>
+    <link>http://www.vedanglad.com/tags/program-synthesis/</link>
+    <description>Recent content in program synthesis on Vedang Lad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 01 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.vedanglad.com/tags/program-synthesis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opening the AI black box: program synthesis via mechanistic interpretability</title>
+      <link>http://www.vedanglad.com/papers/2/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.vedanglad.com/papers/2/</guid>
+      <description>We present a program syntesis method from automated mechanistic interpretibility for RNNs training on integer variable tasks</description>
+    </item>
+    
+  </channel>
+</rss>

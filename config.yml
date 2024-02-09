@@ -14,8 +14,8 @@ menu:
         - name: Papers
           url: /papers/
           weight: 1
-        # - name: Courses
-        #   url: /courses/
+        - name: Projects
+          url: /projects/
         #   weight: 2
         # - name: Design
         #   url: /design/
@@ -61,8 +61,8 @@ params:
           buttons:
             - name: Papers
               url: /papers/
-            # - name: Courses
-            #   url: /courses/
+            - name: Projects
+              url: /projects/
             # - name: Design
             #   url: /design/
             # - name: Newsletter

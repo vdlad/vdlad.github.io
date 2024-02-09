@@ -9,10 +9,10 @@
     <lastBuildDate>Wed, 11 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.vedanglad.com/tags/poker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building an Efficient Poker Agent Using RL</title>
-      <link>http://www.vedanglad.com/2/</link>
+      <link>http://www.vedanglad.com/projects/1/</link>
       <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://www.vedanglad.com/2/</guid>
+      <guid>http://www.vedanglad.com/projects/1/</guid>
       <description>In this paper, we apply variations of Deep Q-learning (DQN) and Proximal Policy Optimization (PPO) to learn the game of heads-up no-limit Texas Hold’em.</description>
     </item>
     
