@@ -6,11 +6,11 @@
     <description>Recent content in Tags on Vedang Lad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.vedanglad.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.vedanglad.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI safety</title>
       <link>http://www.vedanglad.com/tags/ai-safety/</link>
-      <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>http://www.vedanglad.com/tags/ai-safety/</guid>
       <description></description>
@@ -19,9 +19,18 @@
     <item>
       <title>mechanistic interpretability </title>
       <link>http://www.vedanglad.com/tags/mechanistic-interpretability/</link>
-      <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>http://www.vedanglad.com/tags/mechanistic-interpretability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>program synthesis</title>
+      <link>http://www.vedanglad.com/tags/program-synthesis/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.vedanglad.com/tags/program-synthesis/</guid>
       <description></description>
     </item>
     
@@ -67,15 +76,6 @@
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>http://www.vedanglad.com/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>program synthesis</title>
-      <link>http://www.vedanglad.com/tags/program-synthesis/</link>
-      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.vedanglad.com/tags/program-synthesis/</guid>
       <description></description>
     </item>
     
