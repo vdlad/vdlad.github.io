@@ -53,7 +53,7 @@ params:
     profileMode:
           enabled: true
           title: Vedang Lad
-          subtitle: "I am currently an independent researcher in the MATS program working on LLM interpretability. Previously I was a current Master's student at MIT, working under the guidance of Max Tegmark within the Tegmark AI Safety Group. My research is centered on enhancing the interpretability of deep learning models to enable the development and deployment of safe AI systems. During my undergraduate years at MIT, I pursued a double major in Computer Science and Physics, with a primary focus on computer vision research. In my freetime I like to run, paint, and take photos 😊 "
+          subtitle: "I am currently an independent researcher in the MATS program working on LLM interpretability. Previously I was a Master's student at MIT, working under the guidance of Max Tegmark within the Tegmark AI Safety Group. My research is centered on enhancing the interpretability of deep learning models to enable the development and deployment of safe AI systems. During my undergraduate years at MIT, I pursued a double major in Computer Science and Physics, with a primary focus on computer vision research. In my freetime I like to run, paint, and take photos 😊 "
           imageUrl: "/picture.jpeg"
           imageWidth: 160
           imageHeight: 160
