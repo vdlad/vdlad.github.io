@@ -6,13 +6,40 @@
     <description>Recent content in Tags on Vedang Lad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.vedanglad.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.vedanglad.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI safety</title>
       <link>http://www.vedanglad.com/tags/ai-safety/</link>
-      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
       
       <guid>http://www.vedanglad.com/tags/ai-safety/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>large language models</title>
+      <link>http://www.vedanglad.com/tags/large-language-models/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.vedanglad.com/tags/large-language-models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine learning</title>
+      <link>http://www.vedanglad.com/tags/machine-learning/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.vedanglad.com/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>robustness</title>
+      <link>http://www.vedanglad.com/tags/robustness/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.vedanglad.com/tags/robustness/</guid>
       <description></description>
     </item>
     
@@ -67,15 +94,6 @@
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>http://www.vedanglad.com/tags/data-centric/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>machine learning</title>
-      <link>http://www.vedanglad.com/tags/machine-learning/</link>
-      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.vedanglad.com/tags/machine-learning/</guid>
       <description></description>
     </item>
     
