@@ -28,7 +28,7 @@ menu:
         #   weight: 4
 
 params:
-    description: "I am a Master's student at MIT in the Tegmark AI Safety Group where I study mechanistic interpretability."
+    description: "I was previously a Master's student at MIT in the Tegmark AI Safety Group where I studied mechanistic interpretability."
     author: Vedang Lad
     googleAnalyticsID: "G-3MZYQN070Y"
     DateFormat: "January 2006"
@@ -85,7 +85,7 @@ params:
         - name: CV
           url: /cv.pdf
         - name: Email
-          url: mailto:vedang@mit.edu
+          url: mailto:vedanglad@stanford.edu
         # - name: Location
         #   url: /location/
         - name: Google Scholar
