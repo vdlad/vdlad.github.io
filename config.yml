@@ -14,21 +14,12 @@ menu:
         - name: Papers
           url: /papers/
           weight: 1
-        - name: Projects
-          url: /projects/
-        #   weight: 2
-        # - name: Design
-        #   url: /design/
-          weight: 3
         - name: Tags
           url: /tags/
-          weight: 2     
-        # - name: Newsletter
-        #   url: https://pmichaillat.substack.com
-        #   weight: 4
+          weight: 2
 
 params:
-    description: "I was previously a Master's student at MIT in the Tegmark AI Safety Group where I studied mechanistic interpretability."
+    description: "Founding ML Researcher at Metamorphic. MATS scholar. MIT CS & Physics. Starting PhD at Stanford in Fall 2026."
     author: Vedang Lad
     googleAnalyticsID: "G-3MZYQN070Y"
     DateFormat: "January 2006"
@@ -54,15 +45,10 @@ params:
           enabled: true
           title: Vedang Lad
           subtitle: |
-            <div style="text-align: left; font-size: 1.2em; line-height: 1.6em; margin-top: 20px;">
-             <strong>Welcome to my corner of the internet!</strong> <br><br>
-             I'm currently a research engineer at the Enigma Project at Stanford University. I'm interested in interpretability—particularly understanding how language models, vision models, and the brain learn the same "function" that represents our beautiful world! I try to leverage multi-modality to study both biological and artificial neural activations, circuits, and models.<br><br>
-             Previously, I was a Master's student in Computer Science at MIT under the guidance of <a href="https://tegmark.org/" target="_blank">Max Tegmark</a>. 
-             I believe that interpretability of deep learning models is crucial for the development and deployment of safe AI systems. 🤖 <br><br>
-             During my undergraduate years at MIT, I pursued a double major in Computer Science and Physics 
-             while also being an NCAA collegiate cross country and track and field athlete. 🏃‍♂️ <br><br>
-             I currently run for the <a href="https://www.peninsuladistanceclub.com/" target="_blank">Peninsula Distance Club</a> <br><br>
-             <em>Please feel free to reach out!</em> 😊
+            <div style="text-align: left; font-size: 1.1em; line-height: 1.7em; margin-top: 20px;">
+             I'm an AI researcher — a blend of engineer and scientist. My interests span computer science, neuroscience, and math, with a particular focus on the mechanisms and structures that facilitate intelligence, and how we can leverage that understanding to build smarter, safer systems.<br><br>
+             Currently, I'm a Founding ML Researcher at <a href="https://www.metamorphic.com/" target="_blank">Metamorphic</a>, a startup in Palo Alto that spun out of Stanford, where I help build multimodal world models. Before that, I was a MATS scholar and studied computer science and physics at MIT. There, I worked on interpretability with <a href="https://tegmark.org/" target="_blank">Max Tegmark</a> and spent time on data-centric methods in ML. I'll be starting a PhD at Stanford in Fall 2026.<br><br>
+             Outside of research, I was an NCAA track and field athlete at MIT and still run competitively for <a href="https://www.peninsuladistanceclub.com/" target="_blank">Peninsula Distance Club</a> in the Bay Area.
             </div>
 
 
@@ -73,12 +59,6 @@ params:
           buttons:
             - name: Papers
               url: /papers/
-            - name: Projects
-              url: /projects/
-            # - name: Design
-            #   url: /design/
-            # - name: Newsletter
-            #   url: https://pmichaillat.substack.com
     socialIcons:
         - name: CV
           url: /cv.pdf
@@ -86,8 +66,8 @@ params:
           url: mailto:vedanglad@stanford.edu
         # - name: Location
         #   url: /location/
-        - name: Google Scholar
-          url: https://scholar.google.com/citations?user=-zikf2wAAAAJ&hl=en&oi=ao
+        - name: GoogleScholar
+          url: https://scholar.google.com/citations?user=4WGl2ngAAAAJ&hl=en
         # - name: YouTube
         #   url: https://www.youtube.com/@pmichaillat
         - name: GitHub

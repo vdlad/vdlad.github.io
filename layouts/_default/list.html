@@ -2,6 +2,26 @@
 
 {{- if (and site.Params.profileMode.enabled .IsHome) }}
 {{- partial "index_profile.html" . }}
+
+{{- $papers := where site.RegularPages "Section" "papers" }}
+{{- $papers = sort $papers "Date" "desc" }}
+{{- if $papers }}
+<div style="margin-top: 2.5rem;">
+  <h2 style="margin-bottom: 1.2rem; font-size: 1.4rem;">Papers</h2>
+  {{- range $papers }}
+  <div style="margin-bottom: 1.6rem;">
+    <a href="{{ .Permalink }}" style="font-size: 1.05rem; font-weight: 600; text-decoration: none;">{{ .Title }}</a>
+    <div style="font-size: 0.88rem; opacity: 0.75; margin-top: 0.2rem;">{{ .Params.author }}</div>
+    {{- with .Params.editPost }}
+    <div style="font-size: 0.85rem; margin-top: 0.25rem;">
+      <a href="{{ .URL }}" target="_blank" rel="noopener" style="opacity: 0.6; text-decoration: none; font-style: italic;">{{ .Text }}</a>
+    </div>
+    {{- end }}
+  </div>
+  {{- end }}
+</div>
+{{- end }}
+
 {{- else }} {{/* if not profileMode */}}
 
 {{- if not .IsHome | and .Title }}
