@@ -19,13 +19,13 @@ menu:
           weight: 2
 
 params:
-    description: "Founding ML Researcher at Metamorphic. MATS scholar. MIT CS & Physics. Starting PhD at Stanford in Fall 2026."
+    description: "PhD Student at Stanford University"
     author: Vedang Lad
     googleAnalyticsID: "G-3MZYQN070Y"
     DateFormat: "January 2006"
-    defaultTheme: dark
+    defaultTheme: light
     hideFooter: true
-    disableThemeToggle: false
+    disableThemeToggle: true
     ShowShareButtons: false
     ShowReadingTime: false
     disableSpecial1stPost: true
@@ -46,19 +46,15 @@ params:
           title: Vedang Lad
           subtitle: |
             <div style="text-align: left; font-size: 1.1em; line-height: 1.7em; margin-top: 20px;">
-             I'm an AI researcher — a blend of engineer and scientist. My interests span computer science, neuroscience, and math, with a particular focus on the mechanisms and structures that facilitate intelligence, and how we can leverage that understanding to build smarter, safer systems.<br><br>
-             Currently, I'm a Founding ML Researcher at <a href="https://www.metamorphic.com/" target="_blank">Metamorphic</a>, a startup in Palo Alto that spun out of Stanford, where I help build multimodal world models. Before that, I was a MATS scholar and studied computer science and physics at MIT. There, I worked on interpretability with <a href="https://tegmark.org/" target="_blank">Max Tegmark</a> and spent time on data-centric methods in ML. I'll be starting a PhD at Stanford in Fall 2026.<br><br>
-             Outside of research, I was an NCAA track and field athlete at MIT and still run competitively for <a href="https://www.peninsuladistanceclub.com/" target="_blank">Peninsula Distance Club</a> in the Bay Area.
-            </div>
+              I'm a PhD student at Stanford University, fortunate to be working with <a href="https://ganguli-gang.stanford.edu/surya.html" target="_blank" rel="noopener">Surya Ganguli</a> and <a href="https://web.stanford.edu/~cgpotts/" target="_blank" rel="noopener">Christopher Potts</a>.  I'm particularly interested in uncovering the mechanisms and structures that give rise to intelligence and using that understanding to build smarter and safer AI systems.<br><br>
 
+              I received my MEng in EECS from MIT, where I worked on mechanistic interpretability with <a href="https://tegmark.org/" target="_blank" rel="noopener">Max Tegmark</a>. Before that, I studied computer science and physics at MIT, where I worked on data-centric methods in ML. Outside of research, I competed in NCAA cross country and track and field at MIT. I currently run competitively for <a href="https://www.peninsuladistanceclub.com/" target="_blank" rel="noopener">Peninsula Distance Club</a>.
+            </div>
 
           imageUrl: "/picture.jpeg"
           imageWidth: 160
           imageHeight: 160
           imageTitle: Vedang Lad
-          buttons:
-            - name: Papers
-              url: /papers/
     socialIcons:
         - name: CV
           url: /cv.pdf

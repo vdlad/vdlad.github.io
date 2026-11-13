@@ -1,0 +1,33 @@
+/*
+ * Hand-drawn highlighter on hover for text links.
+ * Two background layers:
+ *   1. a page-colored "cover" that shrinks toward the right on hover,
+ *      revealing the stroke from left to right like a marker swipe;
+ *   2. an irregular marker stroke (uneven edges, slight tilt, a second
+ *      overlapping pass for uneven ink).
+ */
+.main a:not(.social-icons a):not(.button):not(.entry-link):not(.pagination a):not(.anchor) {
+    --hl-cover: var(--theme);
+    background-image:
+        linear-gradient(var(--hl-cover), var(--hl-cover)),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 40' preserveAspectRatio='none'%3E%3Cpath d='M6 9.5C30 7.2 52 10.8 80 8.4 104 6.6 128 9.9 156 7.3 182 5.4 206 8.6 233 5.8 236.5 9 235.2 13 237.6 17.5 236.4 21 238.8 26 236.4 31.8 228 33.6 214 31.6 196 33.4 170 35.8 148 32.6 120 34.6 94 36.4 70 33.2 44 35.2 28 36.2 15 34.4 2.6 35.6 4.4 31 1.8 26.6 3.9 22 2.6 17.8 5.6 13.6 6 9.5Z' fill='%23ffe066' fill-opacity='.62'/%3E%3Cpath d='M14 14C50 11.8 90 15.6 130 12.6 165 10.5 200 13.8 228 11.4 229.5 17 227.8 22 229.8 27.6 196 29.4 160 26.8 125 29.6 88 31.6 50 28.4 12 30.4 13.2 25 10.8 19.6 14 14Z' fill='%23ffd43b' fill-opacity='.3'/%3E%3Cpath d='M8 10.6C60 8.4 120 10.4 180 7.6 200 6.8 218 7.4 232 6.6M5 34.4C50 33.4 100 35.4 150 33.2 190 31.8 215 33 235 31' fill='none' stroke='%23f2c200' stroke-opacity='.28' stroke-width='1.6' stroke-linecap='round'/%3E%3Cpath d='M40 21.5C80 20.2 120 22.4 168 20.6' fill='none' stroke='%23fff6c4' stroke-opacity='.35' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 100% 0, 0 55%;
+    background-size: 100% 100%, 100% 105%;
+    padding: 0 0.22em;
+    margin: 0 -0.22em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    transition: background-size 0.45s cubic-bezier(0.3, 0.6, 0.4, 1);
+}
+
+.main a:not(.social-icons a):not(.button):not(.entry-link):not(.pagination a):not(.anchor):hover,
+.main a:not(.social-icons a):not(.button):not(.entry-link):not(.pagination a):not(.anchor):focus-visible {
+    background-size: 0% 100%, 100% 105%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .main a {
+        transition: none !important;
+    }
+}

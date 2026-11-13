@@ -1,0 +1,39 @@
+.vines {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.88;
+}
+
+.main {
+    position: relative;
+    z-index: 1;
+}
+
+.vine-bit {
+    transform: scale(0);
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.2, 0.8, 0.3, 1);
+}
+
+.vine-bit.on {
+    transform: scale(var(--k, 1));
+}
+
+@media (max-width: 900px) {
+    .vines {
+        opacity: 0.55;
+    }
+}
+
+@media print {
+    .vines {
+        display: none;
+    }
+}
+
+/* Name in the vines' green */
+.profile_inner h1 {
+    color: #58703a;
+}
